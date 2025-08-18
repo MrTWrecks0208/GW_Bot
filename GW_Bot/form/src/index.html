@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reddit Bot Generator</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900' rel='stylesheet' type='text/css'>
+<link href="MultiSelect.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <div id="modal-div">
+      <button id="myBtn">Instructions</button>
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>How to Create an App in Reddit</h2>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <li>1. Go to <a href="https://devvit.com" target="_blank">https://devvit.com</a></li>
+        <li>2. Log in or Sign Up if you don't have an account</li>
+        <li>3. Go to <a href="https://reddit.com/prefs/apps" target="_blank">https://reddit.com/prefs/apps</a></li>
+        <li>4. Click 'Create another app'</li>
+        <li>5. Enter app name</li>
+        <li>6. Select 'Script'</li>
+        <li>7. Enter description</li>
+        <li>8. For 'redirect uri', enter 'https://localhost:8080'</li>
+        <li>9. Check the box for 'I'm not a robot'</li>
+        <li>10. Get the Client ID which is underneath the app name in the upper left-hand corner labeled 'personal use script'</li>
+        <li>11. Get the secret from the form (first field on left)</li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <h2>&nbsp;</h2>
+    </div>
+  </div>
+
+</div>
+      </div>
+      
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Reddit Bot Generator </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> User Credentials</legend>
+        
+                    <input type="text" id="userName" name="userName" placeholder="Username">
+       
+                  <input type="password" id="password" name="password" placeholder="Password"><i id="icon" class="fa" onclick="viewPassword()">&#xf070;</i>
+        
+        
+        </fieldset>
+        <fieldset>  
+        
+          <legend><span class="number">2</span> Agent Information </legend>
+          
+ 
+          <input type="text" id="userAgent" name="userAgent" placeholder="User Agent">
+                    <input type="text" id="clientId" name="clientId" placeholder="Client ID">
+          
+          <input type="text" id="secret" name="secret" placeholder="Secret">
+
+<select id="category" name="category" title="category">
+ <optgroup>
+   <option value="" disabled selected>Select Category</option><option value="arts & entertainment">Arts & Entertainment</option>
+ <option value="education">Education</option><option value="discussion & interaction">Discussion & Interaction</option><option value="food">Food</option>
+<option value="gaming">Gaming</option>
+<option value="health">Health</option><option value="human issues">Human Issues</option><option value="humor">Humor</option><option value="images, gifs, and videos">Images, GIFs, and Videos</option><option value="motivation & self improvement">Motivation & Self Improvement</option><option value="news">News</option><option value="outdoors & nature">Outdoors & Nature</option>
+   <option value="sports">Sports</option><option value="technology">Technology</option><option value="nsfw">NSFW</option>
+
+            </optgroup>
+          </select>
+        
+ <select id="subreddits" name="subreddits" title="subreddits"></select>
+ <optgroup>
+    <option value="" disabled selected>Select Subreddit(s)</option>
+            </optgroup>
+          </select>
+          <textarea id="content" name="content" placeholder="Enter text to post"></textarea>
+          <p id="note"><em>*All new lines must be separated by</em> "\<em>n</em>".</p>
+          
+           <input type="text" id="keywords" name="keywords" placeholder="Enter Keywords for Search">       
+         </fieldset>
+       
+        <button type="submit">Create Bot</button>
+        
+       </form>
+        </div>
+      </div>
+      <script>
+  function viewPassword() {
+  var x = document.getElementById("password");
+  var y = document.getElementById("icon");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    </body>
+</html>
+
