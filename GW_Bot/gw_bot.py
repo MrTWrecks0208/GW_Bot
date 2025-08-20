@@ -1,10 +1,10 @@
 import praw
 
 userAgent = 'GWBot'
-clientId = 'WbhDcemVkn52s-wj-Re-Ww'
-secret = '8jchFAJQXXy1FP0o_wOJnUQTpcOQ1w'
-username = 'goodwill_is_evil_bot'
-password = 'k66xuFnwrS*s!8ES'
+clientId = 'pnsZpSjLJ9_2Bt-sxY5JmQ'
+secret = '	amqJtcQeq2TYyNxDy_1_czvsbdlyNg'
+username = 'mrtwrecksDEV'
+password = 'R7%y6GTCvnr3&hnP'
 
 reddit = praw.Reddit(user_agent=userAgent, client_id=clientId, client_secret=secret, username=username, password=password)
 
