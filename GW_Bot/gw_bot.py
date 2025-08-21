@@ -6,7 +6,12 @@ secret = '	amqJtcQeq2TYyNxDy_1_czvsbdlyNg'
 username = 'mrtwrecksDEV'
 password = 'R7%y6GTCvnr3&hnP'
 
-reddit = praw.Reddit(user_agent=userAgent, client_id=clientId, client_secret=secret, username=username, password=password, check_for_updates=False, comment_kind="t1", message_kind="t4", redditor_kind="t2", submission_kind="t3", subreddit_kind="t5", trophy_kind="t6", oauth_url="https://oauth.reddit.com", reddit_url="https://www.reddit.com", short_url="https://redd.it", ratelimit_seconds=5, timeout=16,)
+reddit = praw.Reddit(
+    user_agent=userAgent,
+    client_id=clientId,
+    client_secret=secret,
+    username=username, password=password,
+    )
 
 subreddits = ["flipping", "thesidehustle", "sidehustle", "houston", "thrift", "pics", "thriftstorehauls", 'millenials', 'xennials', 'genz', 'thriftstorefinds', 'thriftgift', 'gamecollecting', 'frugal', 'frugal_jerk', 'thriftedfasion', 'cd_collectors', 'dvdcollection', 'thrifty', 'savingmoney', 'goodwill_finds', 'sneakers', 'whatisthisthing', 'cassetteculture', 'thriftstorefasion', 'repaintings', 'vinyl', 'goodwillbins', 'thriftpaintings', 'thriftflip', 'frugalwrist', 'verycheap', 'vintageaudio', 'gaming', 'streetwear', 'mildlyinteresting', 'funny', 'barbie', 'antiques', 'analogcommunity', 'bookhaul', 'glasscollecting', 'sewing', 'depop', 'vintagefashion', 'whatisthis', 'crochet', 'vintage', 'vintagetees', 'starwars', 'bargainbinvinyl', 'thredup', 'wtfgaragesale', 'donate', 'charitabledonations', 'charity', 'nonprofit', 'vinted', 'retail', 'flippingfinds', 'reselling', 'teenagers', 'resellprofits', 'askreddit', 'shoppingaddiction', 'antiwork', 'anticonsumption', 'frugalshopping', 'resell']
 
